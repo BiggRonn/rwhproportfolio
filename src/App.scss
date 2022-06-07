@@ -1,0 +1,17 @@
+.app{
+  
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  background-color: rgb(40,40,55);
+  font-family: 'Share Tech Mono', monospace;
+  
+}
+::-webkit-scrollbar{
+  width:4px;
+}
+::-webkit-scrollbar-thumb {
+  
+  background: aqua;
+  border-radius: 40px;
+}

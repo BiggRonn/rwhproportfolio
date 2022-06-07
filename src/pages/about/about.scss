@@ -1,0 +1,54 @@
+@import "../../global.scss";
+
+.aboutContainer{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    width: 100%;
+    background-image: linear-gradient(rgb(5, 5, 10),rgb(10,0,30),rgb(10,0,30),rgb(10,0,30),rgb(10,0,30),rgb(20,0,60),rgb(10,0,30),rgb(10,0,30));
+}
+
+.skillsWrapper{
+    height: 60vh;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items:center;
+   
+
+    .skillCard{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height:90%;
+        width: 27%;
+        max-width: 500px;
+        background-color: rgb(96, 120, 145);
+        border: 1px solid aqua;
+        border-radius: 2%;
+        color: aqua;
+
+        .cardTop{
+            margin-top: 2px;
+            height:100%;
+            .icon{
+                height: 80%;
+                width: 100%;
+            }
+        }
+        .cardBottom{
+            h2{
+                margin: 5px;
+                padding: 25px;
+                align-self: center;
+                font-size: min(2rem, 3vw);
+            }
+        }
+
+    }
+}
+.aboutWrapper{
+    height: 50vh;
+}

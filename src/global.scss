@@ -1,0 +1,16 @@
+$maincolor: #230429;
+$accent1: #000B4F;
+$accent2: #829CD0;
+$accent3: #e9e2ff;
+$accent4: #6D6D6D;
+$accent5: #323232;
+
+
+$mobileWidth: 768px;
+
+@mixin mobile{
+    @media (max-width: #{$mobileWidth}){
+        @content
+    }
+}
+;

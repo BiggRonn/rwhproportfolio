@@ -1,0 +1,179 @@
+@import "../../global.scss";
+@keyframes slideName{
+    0%{
+        transform: translate3d(-400px, -200px, 0);
+        opacity: 0;
+    }
+    70%{
+        opacity: .6;
+        color: aqua;
+        text-shadow: 0 0 15px #fff, 0 0 25px #fff, 0 0 45px #fff ;
+    }
+    100%{
+        transform: translate3d(0px, 0, 0);
+        opacity: 1;
+    }
+}
+@keyframes fadeOne {
+    0% {
+      opacity: 0;
+    }
+    30%{
+        opacity: 0;
+    }
+    40%{
+        opacity: 1;
+        text-shadow: 0 0 15px #fff, 0 0 25px #fff, 0 0 45px #fff ;
+    }
+    60%{
+        text-shadow: none;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  @keyframes fadeTwo {
+    0% {
+      opacity: 0;
+    }
+    40%{
+        opacity: 0;
+    }
+    50%{
+        opacity: 1;
+        text-shadow: 0 0 15px #fff, 0 0 25px #fff, 0 0 45px #fff ;
+    }
+    70%{
+        text-shadow: none;
+    }
+    100% { 
+      opacity: 1;
+    }
+  }
+  @keyframes fadeThree {
+    0% {
+      opacity: 0;
+    }
+
+    25%{
+        opacity: 0;
+    }
+    30%{
+        opacity: 1;
+        text-shadow: 0 0 15px #fff, 0 0 25px #fff, 0 0 45px #fff ;
+    }
+    40%{
+        text-shadow: none;
+    }
+    42% {
+        text-shadow: none;
+    }
+    43%{
+        text-shadow: 0 0 15px #fff, 0 0 25px #fff, 0 0 45px #fff ;
+    }
+    44%{
+        text-shadow: none;
+    }
+    45%{
+        text-shadow: 0 0 15px #fff, 0 0 25px #fff, 0 0 45px #fff ;
+    }
+    46%{
+        text-shadow: none;
+    }
+  }
+
+  @keyframes slideButton{
+    0%{
+        border:2px solid transparent;
+        opacity: 0;
+    }
+    50%{
+        opacity: 0;
+        transform: translate3d(0px, 200px, 0);
+    }
+    70%{
+        opacity: 1;
+        border: 2px solid transparent;
+        transform: translate3d(0px, 0, 0);  
+    }
+    75%{
+        border-bottom: 2px solid aqua;
+    }
+    80%{
+        border-left: 2px solid aqua;
+    }
+    85%{
+        border-top: 2px solid aqua;
+    }
+    90%{
+        border-right: 2px solid aqua;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+.introContainer{
+    height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(10,10,20,0.8),rgba(0,0,5,.9)),url("/assets/images/swirlBG.jpg");
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+    .introWrapper{
+        h1{
+            margin-bottom: 10px;
+            font-family: 'Orbitron', sans-serif;
+            font-size: min(6rem,11vw);
+            position: relative;
+            right: min(60px, 4vw);
+            color: #fff;
+            animation: slideName 3s ease;
+        }
+        .listContainer{
+            
+            position: relative;
+            left: min(60px, 4vw);
+            li{ 
+                font-size: min(2rem,4vw);
+                color: rgb(193, 197, 252);
+                list-style: none;
+            }
+            .itemOne{
+                animation: fadeOne 10s ease;
+            }
+            .itemTwo{
+                animation: fadeTwo 10s ease;
+            }
+            .itemThree{
+                animation: fadeThree 20s ease;
+            }
+        }
+    }
+    a{
+        position: relative;
+        right: min(300px, 10vw);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: none;
+        border: 2px solid aqua;
+        border-radius: 3%;
+        color: aqua;
+        padding: min(2vw, 2rem);
+        margin-top: 55px;
+        height: 2.5rem;
+        font-size: min(2rem,4vw);
+        text-decoration: none;
+        animation: slideButton 4.5s ease;
+
+        &:hover{
+            cursor: pointer;
+            color: white;
+            background-color: aqua;
+            box-shadow:  0px 0px 80px #fff, 0px 0px 10px aqua, 0px 0px 21px aqua, 0px 0px 35px aqua, 0px 0px 51px aqua;
+            -webkit-text-stroke: 1px rgb(40,40,55);
+        }
+    }
+}

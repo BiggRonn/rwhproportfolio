@@ -6,13 +6,14 @@
 @import "swiper/scss/effect-cube";
 
 .projectsContainer{
+    padding-top: 50px;
     padding-bottom: 45px;
     background-image: linear-gradient(rgb(10,0,30),rgb(40,40,55),rgb(40,40,55),rgb(40,40,55));
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
-    height: 200vh;
+    
     width: 100%;
    
     h1{

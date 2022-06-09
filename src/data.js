@@ -2,26 +2,26 @@ export const featuredPortfolio = [
     {
         id: 1,
         title: "WuwWug",
-        img: "../assets/WuwWug.PNG",
+        img: "/assets/images/WuwWug.PNG",
         url:"https://wuwwug-b2656.web.app"
 
     }, {
         id: 2,
         title: "Weather App",
-        img: "../assets/clouds.jpg",
+        img: "/assets/images/clouds.jpg",
         url:"https://biggronn.github.io/WeatherCheck/"
     },
     {
         id: 6,
         title: "MVC Tech Blog",
-        img: "../assets/TechBlog.jpg",
+        img: "/assets/images/TechBlog.jpg",
         url: "https://warm-river-26748.herokuapp.com/"
 
     }
     
 ]
 
-export const frontEndPortfolio = [
+export const fullStackPortfolio = [
     {
         id: 1,
         title: "Placeholder",
@@ -62,6 +62,32 @@ export const frontEndPortfolio = [
     
 ]
 
+export const frontEndPortfolio = [
+    {
+        id: 1,
+        title: "BACKIEbackback",
+        img: "../assets/EVcharger.jpg"
+
+    },
+    {
+        id: 2,
+        title: "333",
+        img: "../assets/EVcharger.jpg"
+
+    },
+    {
+        id: 3,
+        title: "Employee Backend",
+        img: "../assets/EVcharger.jpg"
+
+    },
+    {
+        id: 4,
+        title: "Dude, Where's My Charger?",
+        img: "../assets/EVcharger.jpg"
+
+    }
+]
 export const backEndPortfolio = [
     {
         id: 1,
@@ -88,6 +114,7 @@ export const backEndPortfolio = [
 
     }
 ]
+
 export const miscPortfolio = [
     {
         id: 1,

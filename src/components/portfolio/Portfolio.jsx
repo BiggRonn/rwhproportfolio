@@ -3,6 +3,7 @@ import PortfolioList from "../portfolioList/PortfolioList"
 import { useEffect, useState } from "react"
 import {
     featuredPortfolio,
+    fullStackPortfolio,
     frontEndPortfolio,
     backEndPortfolio,
     miscPortfolio
@@ -17,8 +18,8 @@ export default function Portfolio() {
             title: "Featured"
         },
         {
-            id: "Full Stack",
-            title: "Misc. Projects"
+            id: "fullStack",
+            title: "Full Stack"
         },
         {
             id: "frontEnd",
@@ -27,17 +28,22 @@ export default function Portfolio() {
         {
             id: "backEnd",
             title: "Back End"
+        },
+        {
+            id:"miscprojects",
+            title: "More Projects"
         }
     ]
 
     useEffect(() => {
-
         switch (selected) {
             case "featured": setData(featuredPortfolio);
                 break;
-            case "frontend": setData(frontEndPortfolio);
+            case "fullStack": setData(fullStackPortfolio);
                 break;
-            case "backend": setData(backEndPortfolio);
+            case "frontEnd": setData(frontEndPortfolio);
+                break;
+            case "backEnd": setData(backEndPortfolio);
                 break;
             case "miscProjects": setData(miscPortfolio);
                 break;
@@ -47,11 +53,11 @@ export default function Portfolio() {
     }, [selected])
     return (
         <div className="portfolio" id="portfolio">
-            <h1>Portfolio</h1>
             <ul>
                 {list.map((item) => (
                     <PortfolioList
                         title={item.title}
+                        key= {item.id}
                         id={item.id}
                         active={selected === item.id}
                         setSelected={setSelected}
@@ -60,8 +66,8 @@ export default function Portfolio() {
             </ul>
             <div className="displayContainer">
                 {data.map(data=>(
-                <div className="displayItem">
-                    <img src={data.img} alt="" />
+                <div className="displayItem" key={data.id}>
+                    <img src={data.img} alt="F" />
                     <a href= {data.url} target="_blank" rel="noreferrer">Click here to view: {data.title}</a>
                 </div>
                 ))}

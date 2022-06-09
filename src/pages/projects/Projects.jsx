@@ -7,9 +7,9 @@ import Portfolio from "../../components/portfolio/Portfolio";
 
 export default function Projects() {
   return (
-    <div className="projectsContainer" id="projects">
+    <div className="projectsContainer">
       <h1>Projects</h1>
-      <div className="swiperContainer">
+      <div className="swiperContainer"  id="projects">
       <Swiper
         spaceBetween={30}
         centeredSlides={true}

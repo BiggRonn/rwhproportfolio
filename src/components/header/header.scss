@@ -39,7 +39,26 @@
     justify-content: center;
     align-items: flex-end;
     width: 70%;
+    @include mobile{
+        justify-content: flex-start;
+    }
+    
+    ul{
+        
+        padding-left: 0;
+        align-self: flex-start;
+        list-style: none;
+        display: flex;
+        width:60%;
+        @include mobile{
+            justify-content: flex-start;
+        }
 
+        .is-current{
+            text-shadow: 0px 0px 80px #fff, 0px 0px 10px #fff, 0px 0px 21px #fff;
+            text-decoration: underline aqua;
+          }
+    }
     .navItem{
         color: #fff;
         font-size: min(2rem, 3.5vw);

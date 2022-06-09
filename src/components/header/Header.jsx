@@ -13,7 +13,7 @@ export default function Header() {
         <a className="navItem" href="#projects">Projects</a>
         <a className="navItem " href="#contact" >Contact</a>
         </div>
-        <a className="resumeLink" href="https://rwhportfolio.web.app/" target="_blank" rel="noreferrer">Resume</a>
+        <a className="resumeLink" href="assets/RonaldWesHowardResume.pdf" target="_blank" rel="noreferrer">Resume</a>
     </div>
   )
 }

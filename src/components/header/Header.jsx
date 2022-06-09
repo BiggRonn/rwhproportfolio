@@ -2,6 +2,7 @@
 // import React, { useState } from 'react'
 import './header.scss'
 import Scrollspy from "react-scrollspy";
+import AnchorLink from 'react-anchor-link-smooth-scroll';
 export default function Header() {
     
   return (
@@ -12,16 +13,16 @@ export default function Header() {
             currentClassName="is-current"
           >
             <li>
-            <a className={"navItem"} href="#intro" >Home</a>
+            <AnchorLink className={"navItem"} href="#intro" >Home</AnchorLink>
             </li>
             <li>
-            <a className="navItem" href="#about">About</a>
+            <AnchorLink className="navItem" href="#about">About</AnchorLink>
             </li>
             <li>
-            <a className="navItem" href="#projects">Projects</a>
+            <AnchorLink className="navItem" href="#projects">Projects</AnchorLink>
             </li>
             <li>
-            <a className="navItem " href="#contact" >Contact</a>
+            <AnchorLink className="navItem " href="#contact" >Contact</AnchorLink>
             </li>
           </Scrollspy>
        

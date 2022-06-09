@@ -68,7 +68,15 @@ export default function Portfolio() {
                 {data.map(data=>(
                 <div className="displayItem" key={data.id}>
                     <img src={data.img} alt="F" />
-                    <a href= {data.url} target="_blank" rel="noreferrer">Click here to view: {data.title}</a>
+                    <div className="hoverContainer">
+                        <h1>{data.title}</h1>
+                        <div className="infoTop">{data.info}</div>
+                        <div className="techBottom">{data.tech}</div>
+                        </div>
+                    <div className="bottomContainer">
+                    <a href= {data.url} target="_blank" rel="noreferrer">{data.url}</a>
+                    <a>{data.github}</a>
+                    </div>
                 </div>
                 ))}
             </div>

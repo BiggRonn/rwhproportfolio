@@ -1,10 +1,10 @@
-import { useState, useRef } from "react";
+import { useRef } from "react";
 import emailjs from '@emailjs/browser';
 import "./contact.scss"
 import { FaGithub, FaLinkedin, FaTwitter, FaInstagram } from 'react-icons/fa'
+import toast from "react-hot-toast";
 
 export default function Contact() {
-    const [message, setMessage] = useState(false)
     const form = useRef();
 
     const handleSubmit = (e)=>{
@@ -15,7 +15,7 @@ export default function Contact() {
       }, (error) => {
           console.log(error.text);
       });
-        setMessage(true);
+       toast.success("Email received, I will reply ASAP!")
     }
     return (
         <div className = "contact" id = "contact">
@@ -26,13 +26,13 @@ export default function Contact() {
                     <input name="reply_to"type="text" placeholder="Email" />
                     <textarea name = "message"placeholder="Message"></textarea>
                     <button type="submit">Send</button>
-                    {message && <span>Thank you for your interest, an email has been sent to my account and I will respond quickly!</span>}
+
                 </form>
                 <div className="iconContainer">
-                  <a href="https://github.com/BiggRonn" target="_blank" rel="noreferrer"><FaGithub/></a>
-                  <a href="https://www.linkedin.com/in/ronaldweshoward/" target="_blank" rel="noreferrer"><FaLinkedin/></a>
-                  <a href="https://twitter.com/WesHowa19257781" target="_blank" rel="noreferrer"><FaTwitter/></a>
-                  <a href="https://www.instagram.com/biggronwes/" target="_blank" rel="noreferrer"><FaInstagram/></a>
+                  <a href="https://github.com/BiggRonn" target="_blank" rel="noreferrer"><FaGithub className="icon"/></a>
+                  <a href="https://www.linkedin.com/in/ronaldweshoward/" target="_blank" rel="noreferrer"><FaLinkedin className="icon"/></a>
+                  <a href="https://twitter.com/WesHowa19257781" target="_blank" rel="noreferrer"><FaTwitter className="icon"/></a>
+                  <a href="https://www.instagram.com/biggronwes/" target="_blank" rel="noreferrer"><FaInstagram className="icon"/></a>
                 </div>
             </div>
          

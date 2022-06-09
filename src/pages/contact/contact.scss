@@ -40,13 +40,15 @@
             height: 40%
         }
         button{
+            font-size: large;
+            font-weight: 500;
             align-self: center;
             height: 10%;
             width: 50%;
             border: 2px solid aqua;
             border-radius: 3%;
             background-color: aqua;
-            margin-top: 8px;
+            margin-top: 18px;
             margin-bottom: 10px;
         }
 
@@ -54,5 +56,15 @@
     }
     .iconContainer{
         justify-self: flex-end;
+
+        .icon{
+            height:70px;
+            width:70px;
+            margin-left: 1rem;
+            @include mobile{
+                height: 40px;
+                width: 40px;
+            }
+        }
     }
 }

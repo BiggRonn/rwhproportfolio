@@ -1,3 +1,4 @@
+import { Toaster } from 'react-hot-toast';
 import { BrowserRouter } from 'react-router-dom';
 import './App.scss';
 import Footer from './components/footer/Footer';
@@ -11,6 +12,7 @@ function App() {
   return (
     <BrowserRouter>
     <div className="app">
+      <Toaster/>
      <Header/>
      <Intro path="/"/>
      <About path="/about"></About>

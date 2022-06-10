@@ -15,5 +15,6 @@
     &.active {
         background-color: $maincolor;
         color: $accent3;
+        border: solid 1px blueviolet;
     }
 }

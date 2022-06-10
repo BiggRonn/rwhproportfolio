@@ -2,22 +2,33 @@ export const featuredPortfolio = [
     {
         id: 1,
         title: "WuwWug",
+        info:"WuwWug is an app where players can sign up to bid on in-game items and sell items they have found. See only the highest bid on your items, no need for cluttered UI and unnecessary info. Just What U Want and What U Need!",
+        tech:"React, Firebase(Auth, Hosting), NoSQL, ReactRouter, Sass",
         img: "/assets/images/WuwWug.PNG",
-        url:"https://wuwwug-b2656.web.app"
+        url:"https://wuwwug-b2656.web.app",
+        github: "https://github.com/BiggRonn/wuwwug" 
 
-    }, {
-        id: 2,
-        title: "Weather App",
-        img: "/assets/images/clouds.jpg",
-        url:"https://biggronn.github.io/WeatherCheck/"
     },
     {
-        id: 6,
-        title: "MVC Tech Blog",
+        id: 2,
+        title: "Weather Check",
+        info:"Type in a city and instantly display the current weather conditions and a 5 day forecast. Saves past searches for users to search again. Uses OpenWeatherAPI with access to a ton of information.",
+        tech:"HTML, CSS, Javascript, API, localStorage",
+        img: "/assets/images/clouds.jpg",
+        url:"https://biggronn.github.io/WeatherCheck/",
+        github: "https://github.com/BiggRonn/WeatherCheck" 
+
+    },{
+        id: 3,
+        title: "Tech Talkin' Blog",
+        info:"Basic Full Stack CRUD app where users can log in to post a message. Users can comment on other messages and reply to those comments. Come here to talk Tech!",
+        tech:"Express, Handlebars, bcrypt, MySQL2, Sequelize ORM",
         img: "/assets/images/TechBlog.jpg",
-        url: "https://warm-river-26748.herokuapp.com/"
+        url: "https://warm-river-26748.herokuapp.com/",
+        github: "https://github.com/BiggRonn/TechBlogRWH" 
 
     }
+    
     
 ]
 

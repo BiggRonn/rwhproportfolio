@@ -1,6 +1,8 @@
 import "./portfolio.scss"
 import PortfolioList from "../portfolioList/PortfolioList"
 import { useEffect, useState } from "react"
+import { FaGithub } from 'react-icons/fa'
+import Fade from "react-reveal/Fade"; 
 import {
     featuredPortfolio,
     fullStackPortfolio,
@@ -51,6 +53,7 @@ export default function Portfolio() {
         }
 
     }, [selected])
+
     return (
         <div className="portfolio" id="portfolio">
             <ul>
@@ -64,22 +67,25 @@ export default function Portfolio() {
                     />
                 ))}
             </ul>
+             <Fade left cascade>
             <div className="displayContainer">
                 {data.map(data=>(
                 <div className="displayItem" key={data.id}>
+                        <h3>{data.title}</h3>
                     <img src={data.img} alt="F" />
                     <div className="hoverContainer">
-                        <h1>{data.title}</h1>
                         <div className="infoTop">{data.info}</div>
-                        <div className="techBottom">{data.tech}</div>
-                        </div>
+                        <div className="techBottom"><span>Tech Used:</span> {data.tech}</div>
+                    </div>
                     <div className="bottomContainer">
-                    <a href= {data.url} target="_blank" rel="noreferrer">{data.url}</a>
-                    <a>{data.github}</a>
+                        <a href={data.url} target="_blank" rel="noreferrer" className="firstLink">View Project</a>
+                        <a href={data.github} target="_blank" rel="noreferrer" className="secondLink"> <FaGithub></FaGithub>Github</a>
                     </div>
                 </div>
                 ))}
             </div>
+             </Fade>
+                
         </div>
     )
 }

@@ -34,7 +34,7 @@ export default function About() {
       <Fade right cascade>
       <div className="aboutWrapper">
         <div className="faceContainer"><img src="/assets/images/circleFace.png" alt="Wes Howard looking sharp" /></div>
-        <div className="aboutMe">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus modi hic iste, provident aperiam consequuntur eveniet cum nostrum minima. Ea esse harum dolorem necessitatibus iste modi quasi vitae reprehenderit dolor. Lorem ipsum dolor sit, amet consectetur adipisicing elit.</div>
+        <div className="aboutMe">I am a Full Stack Developer who recently completed University of Arizona's Full Stack Coding Bootcamp. Everyday I look forward to learning new things and taking on new challenges. I love the feeling of overcoming a problem that I once thought was impossible. If there is something I don't yet know how to do, I am excited about the learning opportunity it presents. <a href="#contact">Contact me</a> to make your dream project a reality!</div>
       </div>
       </Fade>
 

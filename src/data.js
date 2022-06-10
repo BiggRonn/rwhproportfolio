@@ -140,7 +140,7 @@ export const backEndPortfolio = [
         title: "Team Profile Generator",
         info:"Application will prompt the user for information for individual employees for a team. Once they are done adding members to the team, it will generate an html file with the teams information displayed neatly on cards. You can click on the email seen on the cards to start an email to that individual",
         tech:"Jest Testing, OOP, Coding Fundamentals",
-        img: "/assets/images/myTeamPc.png",
+        img: "/assets/images/team.jpg",
         url: "https://youtu.be/9d1SBd1ELO8",
         github: "https://github.com/BiggRonn/TeamProfileGeneratorRWH" 
     }

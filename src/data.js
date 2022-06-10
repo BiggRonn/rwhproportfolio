@@ -35,39 +35,38 @@ export const featuredPortfolio = [
 export const fullStackPortfolio = [
     {
         id: 1,
-        title: "Placeholder",
-        img: "../assets/earth.jpg"
+        title: "WuwWug",
+        info:"WuwWug is an app where players can sign up to bid on in-game items and sell items they have found. See only the highest bid on your items, no need for cluttered UI and unnecessary info. Just What U Want and What U Need!",
+        tech:"React, Firebase(Auth, Hosting), NoSQL, ReactRouter, Sass",
+        img: "/assets/images/WuwWug.PNG",
+        url:"https://wuwwug-b2656.web.app",
+        github: "https://github.com/BiggRonn/wuwwug" 
 
-    },
-    {
+    },{
         id: 2,
-        title: "Placeholder",
-        img: "../assets/EVcharger.jpg"
+        title: "Budget Buddy",
+        info:"Progressive Web Application that allows users to add and subtract funds. Works offline using service workers. Visualizes data for ease of understanding.",
+        tech:"Service Workers, MongoDB, Mongoose ORM, Express, Bootstrap",
+        img: "/assets/images/BudgetTrackerCS.PNG",
+        url:"https://budget-tracker-pwa-rwh.herokuapp.com/",
+        github: "https://github.com/BiggRonn/BudgetTrackerRWH" 
 
-    },
-    {
+    },{
         id: 3,
-        title: "Placeholder",
-        img: "../assets/EVcharger.jpg"
-
-    },
-    {
+        title: "Best Workout Dashboard",
+        info:"The name says it all. This is a workout dashboard that allows users to enter and save exercises and workout routines. Provides multiple charts so users can see progress and track GAINS",
+        tech:"MongoDB, Mongoose ORM, Bootstrap, Express",
+        img: "/assets/images/WorkoutDashboard.PNG",
+        url:"https://workout-tracker-rwh.herokuapp.com",
+        github: "https://github.com/BiggRonn/WorkoutTrackerRWH" 
+    },{
         id: 4,
-        title: "222",
-        img: "../assets/EVcharger.jpg"
-
-    },
-    {
-        id: 5,
-        title: "222",
-        img: "../assets/EVcharger.jpg"
-
-    },
-    {
-        id: 6,
-        title: "222",
-        img: "../assets/EVcharger.jpg"
-
+        title: "Tech Talkin' Blog",
+        info:"Basic Full Stack CRUD app where users can log in to post a message. Users can comment on other messages and reply to those comments. Come here to talk Tech!",
+        tech:"Express, Handlebars, bcrypt, MySQL2, Sequelize ORM",
+        img: "/assets/images/TechBlog.jpg",
+        url: "https://warm-river-26748.herokuapp.com/",
+        github: "https://github.com/BiggRonn/TechBlogRWH" 
     }
 
     
@@ -76,83 +75,93 @@ export const fullStackPortfolio = [
 export const frontEndPortfolio = [
     {
         id: 1,
-        title: "BACKIEbackback",
-        img: "../assets/EVcharger.jpg"
-
-    },
-    {
+        title: "Employee Directory",
+        info:"This app will allow users to search through a pool of random employees from the RANDOM USER API. They can then search for employees by name, phone, or email. Employees are then sorted by last name alphabetically.",
+        tech:"React, API, react-bootstrap, Fundamentals",
+        img: "/assets/images/Deployed1.png",
+        url: "https://stupefied-mayer-bdc170.netlify.app/",
+        github: "https://github.com/BiggRonn/react-employee-rwh" 
+    },{
         id: 2,
-        title: "333",
-        img: "../assets/EVcharger.jpg"
-
-    },
-    {
+        title: "G.O.A.T. Notes",
+        info:"This application will allow user to enter notes and save them for later viewing. Old notes can be viewed by clicking on them.",
+        tech:"DOM Manipulation, Express, JSON",
+        img: "/assets/images/notes.png",
+        url: "https://calm-tundra-96438.herokuapp.com/",
+        github: "https://github.com/BiggRonn/NoteTakerRWH" 
+    },{
         id: 3,
-        title: "Employee Backend",
-        img: "../assets/EVcharger.jpg"
-
-    },
-    {
-        id: 4,
-        title: "Dude, Where's My Charger?",
-        img: "../assets/EVcharger.jpg"
-
+        title: "Work Day Scheduler",
+        info:"Allows user to input text in time blocks for each hour in the workday. Clicking the save button next to the text will store the text in local storage. Loading the page again with items in the local storage will display in the boxes.",
+        tech:"localStorage, JQuery, Bootstrap, MomentJS",
+        img: "/assets/images/wsdcap.PNG",
+        url: "https://biggronn.github.io/WorkScheduleRWH/",
+        github: "https://github.com/BiggRonn/WorkScheduleRWH" 
     }
 ]
 export const backEndPortfolio = [
     {
         id: 1,
-        title: "BACKIEbackback",
-        img: "../assets/EVcharger.jpg"
+        title: "ECommerce BackEnd",
+        info:"This app sets up a database for users and will allow them to create, read, update, and delete from tables. All tables will display the associated information in other tables. User will follow a series of prompts to enter and manipulate data.",
+        tech:"MySQL, Sequelize ORM, Express",
+        img: "/assets/images/Commerce.jpg",
+        url:"https://youtu.be/D4ZoN5tqweY",
+        github: "https://github.com/BiggRonn/ECommerceBackEndRWH" 
 
-    },
-    {
+    },{
         id: 2,
-        title: "333",
-        img: "../assets/EVcharger.jpg"
+        title: "Employee Tracker",
+        info:"This application will allow users to view and add information in a company database. App uses a database to store information and will create read and update data based on user inputs.",
+        tech:"MySQL, JavaScript",
+        img: "/assets/images/BudgetTrackerCS.PNG",
+        url:"https://youtu.be/YUG-3LHJ-IA",
+        github: "https://github.com/BiggRonn/EmployeeTrackerRWH" 
 
-    },
-    {
+    },{
         id: 3,
-        title: "Employee Backend",
-        img: "../assets/EVcharger.jpg"
-
+        title: "Video Game Reviews",
+        info:"An app where users can sign up to post and comment on their favorite games! Users have a chance to personally have input on why there favorite games should be played by other people.",
+        tech:"Axios, Express, Handlebars, bcrypt, MySQL2, Sequelize ORM",
+        img: "/assets/images/vgreview.png",
+        url:"https://video-game-reviewer.herokuapp.com/",
+        github: "https://github.com/BiggRonn/VideoGameReviewer" 
+    },{
+        id: 4,
+        title: "Table Reservations",
+        info:"Reserve a seat at a table, when seats are full it will add to a wait list",
+        tech:"Express, BootStrap, HTML, Coding Fundamentals",
+        img: "/assets/images/TechBlog.jpg",
+        url: "https://github.com/BiggRonn/TableReservationsRWH",
+        github: "https://github.com/BiggRonn/TableReservationsRWH" 
     },
     {
-        id: 4,
-        title: "Dude, Where's My Charger?",
-        img: "../assets/EVcharger.jpg"
-
+        id: 5,
+        title: "Team Profile Generator",
+        info:"Application will prompt the user for information for individual employees for a team. Once they are done adding members to the team, it will generate an html file with the teams information displayed neatly on cards. You can click on the email seen on the cards to start an email to that individual",
+        tech:"Jest Testing, OOP, Coding Fundamentals",
+        img: "/assets/images/myTeamPc.png",
+        url: "https://youtu.be/9d1SBd1ELO8",
+        github: "https://github.com/BiggRonn/TeamProfileGeneratorRWH" 
     }
 ]
 
 export const miscPortfolio = [
     {
         id: 1,
-        title: "Employee Directory",
-        img: "../assets/Deployed1 copy.PNG",
-        url: "https://stupefied-mayer-bdc170.netlify.app/"
-
-    }, {
+        title: "Code Quiz",
+        info:"Generate a quiz of a 5 questions for the user. Starting the test will begin a timer and the user will score points with correct answers. Incorrect answers will deduct time from the clock. Upon ending, the user will be prompted to put in their Initials to save the high score.",
+        tech:"HTML, JavaScript, CSS, Coding Fundamentals",
+        img: "/assets/images/codequiz.jpg",
+        url: "https://biggronn.github.io/CodeQuizRWH/ ",
+        github: "https://github.com/BiggRonn/CodeQuizRWH" 
+    },{
         id: 2,
-        title: "Budget Tracker PWA",
-        img: "../assets/BudgetTrackerCS.PNG",
-        url: "https://budget-tracker-pwa-rwh.herokuapp.com/"
-
-    },
-    {
-        id: 4,
-        title: "Workout Tracker",
-        img: "../assets/WorkoutDashboard.PNG",
-        url: "https://workout-tracker-rwh.herokuapp.com/"
-
-    },
-    {
-        id: 5,
-        title: "ECommerce Backend",
-        img: "../assets/Commerce.jpg",
-        url: "https://github.com/BiggRonn/ECommerceBackEndRWH"
-
+        title: "Password Generator",
+        info:"This program waits for the user to click a button to generate a pseudo-random code meeting limited specified criteria given by the user. The program then uses this data to generate a primitive password meeting the criteria set by the user.",
+        tech:"DOM Manipulation, JavaScript, HTML, CSS",
+        img: "/assets/images/password.jpg",
+        url: "https://github.com/BiggRonn/PasswordGeneratorRWH",
+        github: "https://github.com/BiggRonn/PasswordGeneratorRWH" 
     }
-    
 ]

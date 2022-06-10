@@ -32,7 +32,7 @@ export default function Portfolio() {
             title: "Back End"
         },
         {
-            id:"miscprojects",
+            id:"miscProjects",
             title: "More Projects"
         }
     ]

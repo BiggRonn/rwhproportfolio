@@ -18,17 +18,7 @@ export const featuredPortfolio = [
         url:"https://biggronn.github.io/WeatherCheck/",
         github: "https://github.com/BiggRonn/WeatherCheck" 
 
-    },{
-        id: 3,
-        title: "Tech Talkin' Blog",
-        info:"Basic Full Stack CRUD app where users can log in to post a message. Users can comment on other messages and reply to those comments. Come here to talk Tech!",
-        tech:"Express, Handlebars, bcrypt, MySQL2, Sequelize ORM",
-        img: "/assets/images/TechBlog.jpg",
-        url: "https://warm-river-26748.herokuapp.com/",
-        github: "https://github.com/BiggRonn/TechBlogRWH" 
-
-    }
-    
+    },
     
 ]
 
@@ -65,7 +55,7 @@ export const fullStackPortfolio = [
         info:"Basic Full Stack CRUD app where users can log in to post a message. Users can comment on other messages and reply to those comments. Come here to talk Tech!",
         tech:"Express, Handlebars, bcrypt, MySQL2, Sequelize ORM",
         img: "/assets/images/TechBlog.jpg",
-        url: "https://warm-river-26748.herokuapp.com/",
+        url: "https://tech-blog-rwh.herokuapp.com/",
         github: "https://github.com/BiggRonn/TechBlogRWH" 
     }
 

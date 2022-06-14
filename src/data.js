@@ -14,11 +14,12 @@ export const featuredPortfolio = [
         title: "Weather Check",
         info:"Type in a city and instantly display the current weather conditions and a 5 day forecast. Saves past searches for users to search again. Uses OpenWeatherAPI with access to a ton of information.",
         tech:"HTML, CSS, Javascript, API, localStorage",
-        img: "/assets/images/clouds.jpg",
+        img: "/assets/images/EVcharger.jpg",
         url:"https://biggronn.github.io/WeatherCheck/",
         github: "https://github.com/BiggRonn/WeatherCheck" 
 
     },
+    
     
 ]
 
@@ -87,6 +88,15 @@ export const frontEndPortfolio = [
         img: "/assets/images/wsdcap.PNG",
         url: "https://biggronn.github.io/WorkScheduleRWH/",
         github: "https://github.com/BiggRonn/WorkScheduleRWH" 
+    },{
+        id: 4,
+        title: "Dude, Where's My Charger",
+        info:"Users input a location and a distance and DWMC uses OpenChargeMapAPI to find all electric vehicle chargers in the specified distance. Users can save past search parameters to be searched again.",
+        tech:"API, HTML, Tailwinds, JavaScript",
+        img: "/assets/images/clouds.jpg",
+        url:"https://dobinator.github.io/Dude-wheres-my-charger/",
+        github: "https://github.com/dobinator/Dude-wheres-my-charger" 
+
     }
 ]
 export const backEndPortfolio = [
